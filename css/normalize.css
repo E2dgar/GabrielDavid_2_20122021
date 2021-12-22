@@ -347,3 +347,11 @@
   [hidden] {
     display: none;
   }
+
+  /* Box-sizing */
+
+  * {
+    box-sizing: border-box;
+  }
+
+ 

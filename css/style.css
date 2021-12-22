@@ -1,0 +1,101 @@
+body {
+    /*Colors***********/
+    --blue: #0065FC;
+    --blue-light: #DEEBFF;
+    --grey: #F2F2F2;
+    --black: #000000;
+    -white: #FFFFFF;
+
+    color: var(--black);
+    /******************/
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+a, 
+a:visited,
+a:active {
+    color: var(--black);
+    text-decoration: none;
+}
+
+/*****HEADER*****/
+header {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 48px 16px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 100px;
+}
+
+header .logo img {
+    margin-left: 8px;
+    max-width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    padding: 16px;
+    position: relative;
+    line-height: 1; /* Fix 1px difference position ::before Chrome/Firefox */
+}
+
+header nav ul li.active::before {
+    content: "";
+    position: absolute;
+    top: -48px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+header nav ul li.active a{
+   color: var(--blue);
+}
+
+
+ /*****MediaQueries*****/
+ @media screen and (max-width:768px) {
+     header {
+         flex-direction: column;
+         padding: 16px 0;
+     }
+
+     header nav {
+         width: 100%;
+     }
+
+     header nav li {
+         text-align: center;
+         flex-basis: 50%;
+     }
+
+     header nav ul li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        top: 100%;
+        background-color: var(--grey);
+    }
+
+     header nav ul li.active::before {
+         background-color: var(--blue);
+         top: 100%;
+     }
+ }
