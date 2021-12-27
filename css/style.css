@@ -121,6 +121,66 @@ h1 {
   font-weight: bold;
 }
 
+/**Filtres**/
+fieldset {
+  border: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 24px 0;
+}
+
+fieldset div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+fieldset h2,
+fieldset label {
+  font-size: 18px;
+}
+
+fieldset h2 {
+  margin-right: 16px;
+}
+
+fieldset label i.fas {
+  border-radius: 50%;
+  background: var(--blue-light);
+  color: var(--blue);
+  height: 52px;
+  width: 52px;
+  text-align: center;
+  line-height: 52px;
+  transform: translateX(-3px);
+}
+
+fieldset label {
+  height: 52px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 8px 16px 8px 0;
+  border-radius: 50px;
+  border: 2px solid var(--grey);
+  text-transform: capitalize;
+  font-weight: bold;
+  background: var(--white);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+fieldset label:hover {
+  cursor: pointer;
+  color: var(--blue);
+  background-color: var(--blue-light);
+}
+
+fieldset span {
+  display: inline-block;
+  padding: 0 20px 0 10px;
+}
+
 /*****MediaQueries*****/
 @media screen and (max-width: 768px) {
   header {
@@ -177,5 +237,9 @@ h1 {
   .search button i {
     display: inline-block;
     padding: 0 14px;
+  }
+
+  fieldset label {
+    margin-right: 8px;
   }
 }
