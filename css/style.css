@@ -186,6 +186,24 @@ fieldset label span span {
   padding: 0;
 }
 
+.search .info-results {
+  padding-left: 36px;
+  position: relative;
+}
+
+.info-results .fas {
+  position: absolute;
+  left: 0;
+  top: -6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 26px;
+  border: 1px solid var(--grey);
+  color: var(--blue);
+  margin-right: 8px;
+}
 
 /*****MediaQueries*****/
 @media screen and (max-width: 768px){
@@ -223,7 +241,7 @@ fieldset label span span {
     margin: 0 auto;
   }
 
-  .search input {
+  .search input[type="text"] {
     flex-grow: 1;
     width: 100%;
   }
