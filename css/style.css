@@ -176,13 +176,19 @@ fieldset label:hover {
   background-color: var(--blue-light);
 }
 
-fieldset span {
+fieldset label span {
   display: inline-block;
   padding: 0 20px 0 10px;
 }
 
+fieldset label span span {
+  text-transform: none;
+  padding: 0;
+}
+
+
 /*****MediaQueries*****/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
   header {
     flex-direction: column;
     padding: 16px 0;
