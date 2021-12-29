@@ -128,29 +128,28 @@ h1 {
 }
 
 /**Filtres**/
-fieldset {
-  border: none;
+.filter {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding: 24px 0;
 }
 
-fieldset div {
+.filter div {
   display: flex;
   flex-wrap: wrap;
 }
 
-fieldset h2,
-fieldset label {
+.filter h2,
+.filter label {
   font-size: 18px;
 }
 
-fieldset h2 {
+.filter h2 {
   margin-right: 16px;
 }
 
-fieldset label i.fas {
+.filter label i.fas {
   border-radius: 50%;
   background: var(--blue-light);
   color: var(--blue);
@@ -161,7 +160,7 @@ fieldset label i.fas {
   transform: translateX(-3px);
 }
 
-fieldset label {
+.filter label {
   height: 52px;
   display: flex;
   flex-wrap: nowrap;
@@ -176,18 +175,18 @@ fieldset label {
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-fieldset label:hover {
+.filter label:hover {
   cursor: pointer;
   color: var(--blue);
   background-color: var(--blue-light);
 }
 
-fieldset label span {
+.filter label span {
   display: inline-block;
   padding: 0 20px 0 10px;
 }
 
-fieldset label span span {
+.filter label span span {
   text-transform: none;
   padding: 0;
 }
