@@ -4,6 +4,7 @@ body {
   --blue-light: #deebff;
   --grey: #f2f2f2;
   --shadow: #D3D3D3;
+  --shadow-hover: #7E7E7E;
   --black: #000000;
   --white: #ffffff;
 
@@ -250,6 +251,7 @@ h1 {
   font-weight: bold;
   position: relative;
   color: var(--black);
+  background-color: var(--grey);
 }
 .more::before {
   content:"";
@@ -271,6 +273,13 @@ h1 {
 }
 
 /*****Cards*****/
+article {
+  background: var(--white);
+  box-shadow: 0 5px 10px 5px var(--shadow);
+  border-radius: 30px;
+  transition: box-shadow .3s ease-in-out;
+  position: relative;
+}
 article .rating {
   padding: 0 16px;
 }
@@ -289,16 +298,20 @@ article a::before {
   left: 0;
   right: 0;
 }
+
+.cards-container article:hover {
+  box-shadow: 0 5px 10px 5px var(--shadow-hover);
+}
+
+.activities .cards-container {
+  padding: 16px;
+}
 /*****Hébergements ville *****/
 .lodgings-section article {
-  background: var(--white);
   flex-basis: calc( 100% / 3 - 16px);
   min-width: 175px;
   height: max-content;
-  box-shadow: 0 5px 10px 5px var(--shadow);
-  border-radius: 30px;
   padding: 0 0 12px;
-  position: relative;
 }
 
 .lodgings-section article img{
@@ -316,12 +329,8 @@ article a::before {
 
 /*****Popular*****/
 .popular-section article {
-  background: var(--white);
   width: 100%;
   min-height: 150px;
-  box-shadow: 0 0 10px 5px var(--shadow);
-  border-radius: 30px;
-  position: relative;
   display:flex;
 }
 .popular-section article .details-container {
@@ -351,6 +360,27 @@ article a::before {
   margin-top: auto;
 }
 
+/*****Activities****/
+.activities .cards-container {
+  flex-flow: column wrap;
+}
+.activities article {
+  flex-direction: column;
+  width: 300px;
+}
+.activities .cards-container article img{
+  max-height: unset;
+  height:150px;
+  border-radius: 30px 30px 0 0;
+}
+.activities .cards-container article:nth-child(3n +1) img{
+  height: 400px;
+}
+
+.activities h3 {
+ padding: 0 16px;
+}
+
 
 /*****MediaQueries*****/
 @media screen and (max-width: 992px){
@@ -375,6 +405,9 @@ article a::before {
   }
   .popular-section article {
     max-width: 768px;
+  }
+  .more {
+    background-color: var(--white);
   }
 }
 
