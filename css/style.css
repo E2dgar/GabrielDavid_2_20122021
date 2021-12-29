@@ -23,7 +23,6 @@ a:active {
 /*****HEADER*****/
 header {
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   padding: 24px 16px 16px;
   display: flex;
@@ -65,17 +64,19 @@ header nav ul li::before {
   background-color: var(--blue);
 }
 
-header nav ul li:hover::before {
-  transform: scaleX(1);
+@media (hover:hover) {
+  header nav ul li:hover::before {
+    transform: scaleX(1);
+  }
+  
+  header nav ul li:hover a {
+    color: var(--blue);
+  }
 }
 
-header nav ul li:hover a {
-  color: var(--blue);
-}
 
 /*****Formulaire*****/
 section.search {
-  max-width: 1440px;
   margin: 0 auto;
   padding: 16px;
 }
@@ -316,6 +317,7 @@ article a::before {
     width: 100%;
     top: 100%;
     background-color: var(--grey);
+    transform: unset;
   }
 
   header nav ul li.active::before {
