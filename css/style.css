@@ -53,17 +53,23 @@ header nav ul li {
   line-height: 1; /* Fix 1px difference position ::before Chrome/Firefox */
 }
 
-header nav ul li.active::before {
+header nav ul li::before {
   content: "";
   position: absolute;
   top: -26px;
   left: 0;
   height: 4px;
   width: 100%;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
   background-color: var(--blue);
 }
 
-header nav ul li.active a {
+header nav ul li:hover::before {
+  transform: scaleX(1);
+}
+
+header nav ul li:hover a {
   color: var(--blue);
 }
 
