@@ -405,17 +405,17 @@ article a::before {
   }
   .popular-section {
     order: 1;
-
   }
   .lodgings-section {
     order: 2;
     background-color: var(--white);
   }
   .popular-section .cards-container {
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
   }
   .popular-section article {
-    max-width: 768px;
+    flex-basis: calc(50% - 8px);
   }
   .more {
     background-color: var(--white);
@@ -483,6 +483,14 @@ article a::before {
 
   fieldset label {
     margin-right: 8px;
+  }
+
+  .popular-section .cards-container {
+    flex-direction: column;
+  }
+
+  .cards-container article {
+    width: 100%;
   }
 
   .cards-container {
