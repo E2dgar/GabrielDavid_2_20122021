@@ -370,6 +370,7 @@ article a::before {
 
 /*****Activities****/
 .activities {
+  margin: 48px auto;
   padding:0 24px;
 }
 .activities .cards-container {
@@ -433,6 +434,17 @@ article a::before {
   }
   .more {
     background-color: var(--white);
+  }
+
+  .activities .cards-container {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .activities article {
+    width: calc(50% - 16px);
+  }
+  .activities article.activities-item img {
+    height: 140px;
   }
 }
 
