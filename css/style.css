@@ -472,6 +472,9 @@ footer {
     height: 140px;
   }
 
+  footer {
+    padding: 48px 24px 24px;
+  }
   .footer-list {
     width: calc(50% - 16px);
   }
