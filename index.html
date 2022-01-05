@@ -38,9 +38,12 @@
                 <form id="search-form" role="search">
                     <div class="search-container">
                         <label class="sr-only" for="search-field">Lieu de recherche</label>
-                        <i class="fas fa-map-marker-alt" aria-hidden="true" title="Lieu de recherche"></i>
-                        <span class="sr-only">Lieu de recherche :</span>
+
+                        <i class="fas fa-map-marker-alt" aria-hidden="true" title="Lieu"></i>
+                        <span class="sr-only">Lieu :</span>
+
                         <input id="search-field" type="text" name="search" placeholder="Marseille, France">
+
                         <button type="submit">
                             <span>Rechercher</span>
                             <i class="fas fa-search" aria-hidden="true" title="Rechercher"></i>
@@ -49,34 +52,34 @@
                     </div>
                 </form>
 
-                <div class="filter">
+                <form id="filter-form" class="filter">
                     <h2>Filtres</h2>
                     <div>
                         <label>
                             <i class="fas fa-money-bill-wave"></i>
                             <input class="sr-only" type="checkbox" name="filter">
-                            <span>économique</span>
+                            <span>Économique</span>
                         </label>
 
                         <label>
                             <i class="fas fa-child"></i>
                             <input class="sr-only" type="checkbox" name="filter">
-                            <span>familial</span>
+                            <span>Familial</span>
                         </label>
 
                         <label>
                             <i class="fas fa-heart"></i>
                             <input class="sr-only" type="checkbox" name="filter">
-                            <span>romantique</span>
+                            <span>Romantique</span>
                         </label>
 
                         <label>
                             <i class="fas fa-dog"></i>
                             <input class="sr-only" type="checkbox" name="filter">
-                            <span>animaux&nbsp;<span>autorisés</span></span>
+                            <span>Animaux Autorisés</span>
                         </label>
                     </div>
-                </div>
+                </form>
 
                 <p class="info-results"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
             </section>
@@ -277,7 +280,7 @@
             <section id="activities" class="activities">
                 <h2>Activités à Marseille</h2>
                 <div class="cards-container">
-                    <article class="activities-item single-item full">
+                    <article class="activities-item full">
                         <img src="images/small/vieux_port.jpg" alt="Vieux Port">
 
                         <h3>
@@ -300,7 +303,7 @@
                         </h3>
                     </article>
 
-                    <article class="activities-item single-item full">
+                    <article class="activities-item full">
                         <img src="images/small/calanques.jpg" alt="Parc National des Calanques">
 
                         <h3>

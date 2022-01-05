@@ -174,7 +174,6 @@ h1 {
   margin: 8px 16px 8px 0;
   border-radius: 50px;
   border: 3px solid var(--grey);
-  text-transform: capitalize;
   font-weight: bold;
   background: var(--white);
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -191,10 +190,6 @@ h1 {
   padding: 0 20px 0 10px;
 }
 
-.filter label span span {
-  text-transform: none;
-  padding: 0;
-}
 
 .search .info-results {
   padding-left: 36px;
@@ -297,6 +292,7 @@ article a::before {
   bottom: 0;
   left: 0;
   right: 0;
+  border-radius: 30px;
 }
 
 .cards-container article:hover {
@@ -310,7 +306,6 @@ article a::before {
 /*****Hébergements ville *****/
 .lodgings-section article {
   flex-basis: calc((100% / 3) - (32px / 3));
-  min-width: 165px;
   padding: 0 0 12px;
   display: flex;
   flex-direction: column;
@@ -396,6 +391,9 @@ article a::before {
 .activities h3 {
   padding: 0 16px;
   font-size: 16px;
+}
+.activities .full {
+  max-height: 100%;
 }
 .activities .full img {
   height: 450px;
