@@ -3,8 +3,8 @@ body {
   --blue: #0065fc;
   --blue-light: #deebff;
   --grey: #f2f2f2;
-  --shadow: #D3D3D3;
-  --shadow-hover: #7E7E7E;
+  --shadow: #d3d3d3;
+  --shadow-hover: #7e7e7e;
   --black: #000000;
   --white: #ffffff;
 
@@ -65,11 +65,11 @@ header nav ul li::before {
   height: 4px;
   width: 100%;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   background-color: var(--blue);
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
   header nav ul li:hover::before {
     transform: scaleX(1);
   }
@@ -78,6 +78,7 @@ header nav ul li::before {
 main {
   padding: 0 24px;
 }
+
 /*****Formulaire*****/
 section.search {
   margin: 0 auto;
@@ -228,10 +229,10 @@ h1 {
   padding: 16px 24px;
 }
 .lodgings-section {
-  flex-basis: calc( 100% * 2/ 3);
+  flex-basis: calc(100% * 2 / 3);
 }
 .popular-section {
-  flex-basis: calc( 100% / 3);
+  flex-basis: calc(100% / 3);
 }
 .cards-container {
   display: flex;
@@ -253,14 +254,14 @@ h1 {
   background-color: var(--grey);
 }
 .more::before {
-  content:"";
+  content: "";
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
   height: 2px;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out, color .3s ease-in-out;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   background-color: var(--blue);
 }
 .more:hover {
@@ -276,17 +277,17 @@ article {
   background: var(--white);
   box-shadow: 0 5px 10px 5px var(--shadow);
   border-radius: 30px;
-  transition: box-shadow .3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
   position: relative;
 }
 article .rating {
   padding: 0 16px;
 }
-article .rating .fas{
+article .rating .fas {
   color: var(--grey);
   font-size: 14px;
 }
-article .rating .fas.checked{
+article .rating .fas.checked {
   color: var(--blue);
 }
 article a::before {
@@ -305,19 +306,20 @@ article a::before {
 .activities .cards-container {
   padding: 16px;
 }
+
 /*****Hébergements ville *****/
 .lodgings-section article {
-  flex-basis: calc( (100% / 3) - (32px / 3) );
+  flex-basis: calc((100% / 3) - (32px / 3));
   min-width: 165px;
   padding: 0 0 12px;
   display: flex;
   flex-direction: column;
 }
 
-.lodgings-section article img{
+.lodgings-section article img {
   border-radius: 30px 30px 0 0;
 }
-.lodgings-section article h3{
+.lodgings-section article h3 {
   padding: 0 16px;
   margin: 0 0 8px;
 }
@@ -337,16 +339,15 @@ article a::before {
 .popular-section article {
   width: 100%;
   min-height: 150px;
-  display:flex;
+  display: flex;
 }
 .popular-section article .details-container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding: 8px 8px 16px;
   flex-basis: calc(100% * 2 / 3);
 }
 .popular-section article .img {
- /* flex-basis: calc(100% / 3);*/
   flex: 1;
   overflow: hidden;
   height: 170px;
@@ -354,13 +355,11 @@ article a::before {
 
 .popular-section article img {
   border-radius: 30px 0 0 30px;
-  /*height: 100%;
-  max-height: 150px;*/
   height: 100%;
   width: 100%;
 }
 .popular-section article h3 {
-  margin: 8px 0 ;
+  margin: 8px 0;
   max-width: 18ch;
 }
 
@@ -389,23 +388,23 @@ article a::before {
   display: flex;
   flex-direction: column;
 }
-.activities  article img{
+.activities article img {
   border-radius: 30px 30px 0 0;
   border: none;
   height: 100%;
 }
 .activities h3 {
- padding: 0 16px;
- font-size: 16px;
+  padding: 0 16px;
+  font-size: 16px;
 }
-.activities .full  img {
+.activities .full img {
   height: 450px;
 }
-.activities .quarter img  {
- height: 120px;
+.activities .quarter img {
+  height: 120px;
 }
 .activities .half img {
-  height: 220px
+  height: 220px;
 }
 
 /*****Footer*****/
@@ -426,15 +425,15 @@ footer {
   line-height: 2;
 }
 .footer-list li a {
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 .footer-list li:hover a {
   color: var(--blue);
 }
 
-
 /*****MediaQueries*****/
-@media screen and (max-width: 992px){
+/*Tablette*/
+@media screen and (max-width: 992px) {
   main {
     padding: 0 0;
   }
@@ -483,9 +482,8 @@ footer {
     width: calc(50% - 16px);
   }
 }
-
-
-@media screen and (max-width: 768px){
+/*Mobile*/
+@media screen and (max-width: 768px) {
   header {
     flex-direction: column;
     padding: 16px 0;
@@ -577,7 +575,7 @@ footer {
     max-width: 500px;
     margin: auto;
   }
-  
+
   footer {
     padding: 48px 16px 24px;
   }
